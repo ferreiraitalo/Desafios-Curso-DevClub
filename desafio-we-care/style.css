@@ -1,0 +1,144 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+    margin: 0; /*para organizar as escritas. Por ter efeito cascata, os proximos ajustes irão modificar*/
+    padding: 0; /*para organizar as escritas. Por ter efeito cascata, os proximos ajustes irão modificar*/
+    box-sizing: border-box; /*utilizada para alterar a propriedade padrão da box model (widths e heights). border-box: tudo vai ficar dentro da medida definida p/width e height*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    margin: 44px 0 144px 76px;
+}
+
+.link-header {
+    width: 79px;
+    height: 29px;
+    font-weight: 600; /*identificando a fonte importada*/
+    font-size: 24px;
+    line-height: 29px;
+    color: #989D9C;
+    cursor: pointer; /*troca da setinha pelo dedinho*/
+    margin-right: 23px;
+}
+
+.button-header {
+    background: #665AE1;
+    border-radius: 20.5px;
+    width: 130px;
+    height: 41px;
+    border: none; /*sem borda o botão*/
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer; /*troca da setinha pelo dedinho*/
+}
+
+.img-logo {
+    width: 568px;
+    height: 500px;
+    margin-left: 125px;
+    display: inline-block; /*especifica o tipo de caixa de renderização usada por um elemento*/
+}
+
+section {
+    display: inline-block; /*elementos em linha, porém com caracteristicas do display Block e height e width podem ser alteradas*/
+    margin-left: 86px;
+    position: absolute;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;
+    color: #515151
+    
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 71px;
+    color: #515151;
+}
+
+p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #848484;
+    width: 515px;
+    margin: 32px 146px 65px 0;
+}
+
+.button-main {
+    width: 239px;
+    height: 64px;
+    background: #ADFF00;
+    border-radius: 20.5px;
+    border: none;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    cursor: pointer;
+}
+
+@media(min-width: 320px) and (max-width: 450px) {
+    header, p {
+        display: none;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    section {
+        position: static;
+        margin: 0;
+    }
+
+    .img-logo {
+        width: 354px;
+        height: 317px;
+        margin: 149px 0 24px 0;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 60.95px;
+        color: #515151;
+        width: 263px;
+        height: 52px;
+    }
+
+    h2 {
+        width: 232px;
+        height: 37px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #515151;
+        margin: 7px auto 17px auto;
+    }
+
+    .button-main {
+        width: 239px;
+        height: 64px;
+        background: #ADFF00;
+        border-radius: 20.5px;
+        border: none;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        color: #000000;
+        cursor: pointer;
+        margin-bottom: 133px;
+        left: 19.25%;
+        right: 19.25%;
+        top: 23.44%;
+        bottom: 35.9%;
+    }
+    
+}

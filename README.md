@@ -17,7 +17,13 @@ Segue os desafios realizados no curso Full Stack do DevClub.
 ![desafio-easy-shopping.](./img/desafio-easy-shopping.jpg)
 
 ### Segundo desafio:
-![desafio-we-care.](./img/desafio-we-care.jpg)
+💻
+
+![Imagem do desafio We Care em notebook.](./img/desafio-we-care.jpg)
+
+📱
+
+![Imagem do desafio We Care em mobile.](./img/desafio-we-care-mobile.jpg)
 
 ### Terceiro desafio:
 💻

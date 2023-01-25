@@ -1,144 +1,198 @@
 * {
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
-    margin: 0; /*para organizar as escritas. Por ter efeito cascata, os proximos ajustes irão modificar*/
-    padding: 0; /*para organizar as escritas. Por ter efeito cascata, os proximos ajustes irão modificar*/
-    box-sizing: border-box; /*utilizada para alterar a propriedade padrão da box model (widths e heights). border-box: tudo vai ficar dentro da medida definida p/width e height*/
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    margin: 44px 0 144px 76px;
+html {
+    font-size: 62.5%;
 }
 
-.link-header {
-    width: 79px;
-    height: 29px;
-    font-weight: 600; /*identificando a fonte importada*/
-    font-size: 24px;
-    line-height: 29px;
+:root {
+    --menu-text-font-size: 2.4rem;
+    --title-font-size: 10rem;
+    --title-smaller-font-size: 5.8rem;
+    --main-button-font-size: 2.8rem;
+}
+
+.header {
+    padding: 38px 0 0 76px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 795px;
+}
+
+.menu__link {
+    display: flex;
+    font-weight: 600; 
+    font-size: var(--menu-text-font-size);
+    line-height: 2.9rem;
     color: #989D9C;
-    cursor: pointer; /*troca da setinha pelo dedinho*/
-    margin-right: 23px;
+    cursor: pointer; 
 }
 
-.button-header {
+.menu__button {
     background: #665AE1;
     border-radius: 20.5px;
     width: 130px;
     height: 41px;
-    border: none; /*sem borda o botão*/
-    font-size: 24px;
+    border: none; 
+    font-size: var(--menu-text-font-size);
     line-height: 29px;
     font-weight: 600;
     color: #FFFFFF;
-    cursor: pointer; /*troca da setinha pelo dedinho*/
+    cursor: pointer; 
 }
 
-.img-logo {
-    width: 568px;
-    height: 500px;
-    margin-left: 125px;
-    display: inline-block; /*especifica o tipo de caixa de renderização usada por um elemento*/
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-section {
-    display: inline-block; /*elementos em linha, porém com caracteristicas do display Block e height e width podem ser alteradas*/
-    margin-left: 86px;
-    position: absolute;
+.main__image {
+    width: 39.92%;
+    margin-right: 86px;     
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 100px;
-    line-height: 122px;
-    color: #515151
-    
+.main__image-logo {
+    width: 100%;
 }
 
-h2 {
-    font-weight: 500;
-    font-size: 58px;
-    line-height: 71px;
-    color: #515151;
+.main__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 36%;
 }
 
-p {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #848484;
-    width: 515px;
-    margin: 32px 146px 65px 0;
-}
-
-.button-main {
+.main__button {
     width: 239px;
     height: 64px;
     background: #ADFF00;
     border-radius: 20.5px;
     border: none;
     font-weight: 700;
-    font-size: 28px;
+    font-size: var(--main-button-font-size);
     line-height: 34px;
     color: #000000;
     cursor: pointer;
 }
 
-@media(min-width: 320px) and (max-width: 450px) {
-    header, p {
+.title {
+    font-weight: 900;
+    font-size: var(--title-font-size);
+    line-height: 122px;
+    color: #515151; 
+    width: 100%;  
+}
+
+.title--smaller {
+    font-weight: 500;
+    font-size: var(--title-smaller-font-size);
+    line-height: 71px;
+    color: #515151;
+    width: 100%;
+}
+
+.text {
+    font-weight: 400;
+    font-size: var(--menu-text-font-size);
+    line-height: 29px;
+    color: #848484;
+    width: 100%;
+    margin: 32px 0 65px 0;
+}
+
+@media(max-width: 1436px) {
+    .menu__link, .menu__button, .text {
+        font-size: calc(var(--menu-text-font-size) - 0.48rem);
+    }
+
+    .title {
+        font-size: calc(var(--title-font-size) - 2rem);
+    }
+
+    .title--smaller {
+        font-size: calc(var(--title-smaller-font-size) - 1.16rem);
+    }
+}
+
+@media(max-width: 1152px) {
+    .menu__link, .menu__button, .text {
+        font-size: calc(var(--menu-text-font-size) - 0.86rem);
+    }
+
+    .title {
+        font-size: calc(var(--title-font-size) - 3.6rem);
+    }
+
+    .title--smaller {
+        font-size: calc(var(--title-smaller-font-size) - 2.10rem);
+    }
+}
+
+@media(max-width: 925px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 38px 0 0 0;
+    }
+    
+    .menu {
+        width: 95%;
+    }
+    
+    .main {
+        flex-direction: column;
+        padding: 70px 0 133px 0;
+        text-align: center;
+    }
+    
+    .main__image {
+        width: 90%;
+        margin-right: 0px;     
+    }
+    
+    .main__image-logo {
+        width: 100%;
+    }
+    
+    .main__text {
+        width: 68%;
+        margin-top: 24px;
+        align-items: center;
+    }
+}
+
+@media(max-width: 650px) {
+    .header, .text {
         display: none;
     }
 
-    main {
-        text-align: center;
+    .main {
+        padding: 149px 0 133px 0;
     }
 
-    section {
-        position: static;
-        margin: 0;
+     .title--smaller {
+        margin: 7px 0 17px 0;
     }
 
-    .img-logo {
-        width: 354px;
-        height: 317px;
-        margin: 149px 0 24px 0;
-    }
-
-    h1 {
-        font-weight: 900;
-        font-size: 50px;
-        line-height: 60.95px;
-        color: #515151;
-        width: 263px;
-        height: 52px;
-    }
-
-    h2 {
-        width: 232px;
-        height: 37px;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 37px;
-        color: #515151;
-        margin: 7px auto 17px auto;
-    }
-
-    .button-main {
-        width: 239px;
-        height: 64px;
-        background: #ADFF00;
-        border-radius: 20.5px;
-        border: none;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 34px;
-        color: #000000;
-        cursor: pointer;
-        margin-bottom: 133px;
-        left: 19.25%;
-        right: 19.25%;
-        top: 23.44%;
-        bottom: 35.9%;
+    .title {
+        font-size: calc(var(--title-font-size) - 5rem);
+        line-height: 61px;
     }
     
+    .title--smaller {
+        font-size: calc(var(--title-smaller-font-size) - 2.8rem);
+        line-height: 37px;
+    }
 }
+

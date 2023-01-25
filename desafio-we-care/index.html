@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--informando ao navegador a versão do HTML-->
 <html lang="pt-br">
-<!--lingua do site-->
 
 <head>
     <meta charset="UTF-8">
@@ -9,36 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Care</title>
     <link rel="stylesheet" href="./style.css">
-    <!--identificação do CSS-->
+    <link rel="shortcut icon" href="./we-care-logo.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <!--cabeçalho da pagina-->
-        <a class="link-header">HOME</a>
-        <a class="link-header">ABOUT</a>
-        <a class="link-header">PRODUCT</a>
-        <a class="link-header">SERVICE</a>
-        <a class="link-header">CONTACT</a>
-        <button class="button-header">LOG IN</button>
+    <header class="header">
+        <nav class="menu">
+            <a class="menu__link">HOME</a>
+            <a class="menu__link">ABOUT</a>
+            <a class="menu__link">PRODUCT</a>
+            <a class="menu__link">SERVICE</a>
+            <a class="menu__link">CONTACT</a>
+            <button class="menu__button">LOG IN</button>
+        </nav>    
     </header>
 
-    <main>
-        <!--conteúdo principal da pagina-->
-        <img src="./We-Care-Logo.jpg" alt="We Care Logo" class="img-logo">
+    <main class="main">
+        <div class="main__image">
+            <img class="main__image-logo" src="./we-care-logo.jpg" alt="We Care Logo" class="img-logo">
+        </div>
 
-        <section>
-            <!--está definindo uma seção na tag principal (main)-->
-            <h1>WE CARE</h1>
+        <section class="main__text">
+            
+            <h1 class="title">WE CARE</h1>
 
-            <h2>About Your Pet</h2>
+            <h2 class="title title--smaller">About Your Pet</h2>
 
-            <p>
+            <p class="text">
                 Lorem ipsum dolor sit amet consecteturad cing elit aenean a justo quis mauris hendri pellentesque eget
                 at ipsumuis cursusturpi.
             </p>
 
-            <button class="button-main">EXPLORE</button>
+            <button class="main__button">EXPLORE</button>
         </section>
     </main>
 </body>

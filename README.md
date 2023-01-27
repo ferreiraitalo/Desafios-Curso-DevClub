@@ -1,8 +1,6 @@
 # 🚀 Desafios do DevClub 
 Segue os desafios realizados no curso Full Stack do DevClub. 
 
-<br>
-
 # 🛠️ Linguagens e ferramentas:
 <img alt="imagem-HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /> <img alt="imagem-CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img alt="imagem-VSCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
 
@@ -10,17 +8,15 @@ Segue os desafios realizados no curso Full Stack do DevClub.
 2. desafio-we-care. [Código!](https://github.com/ferreiraitalo/Desafios-Curso-DevClub/tree/main/desafio-we-care)🔗
 3. desafio-wide-coverage-location. [Código!](https://github.com/ferreiraitalo/Desafios-Curso-DevClub/tree/main/desafio-wide-coverage-location)🔗
 
-<br>
-
 # 🖥️ Imagens / Visualizações:
 ### Primeiro desafio:
 💻
 
-![Imagem do desafio We Care em notebook.](./img/desafio-easy-shopping.jpg)
+![Imagem do desafio Easy Shopping em notebook.](./img/desafio-easy-shopping.jpg)
 
 📱
 
-![Imagem do desafio We Care em mobile.](./img/desafio-easy-shopping-mobile.jpg)
+![Imagem do desafio Easy Shopping em mobile.](./img/desafio-easy-shopping-mobile.jpg)
 
 ### Segundo desafio:
 💻

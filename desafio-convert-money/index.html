@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevClub | Convert Money</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/convert.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title__header">DevClub Convert Money</h1>
+        </header>
+
+        <main class="main">
+            <label class="main__label" for="">
+                <p class="text">Converter <b>de</b>:</p>
+                <select class="main__select" name="" id="">
+                    <option value=""> R$ Real Brasileiro</option>
+                </select>
+            </label>
+
+            <label class="main__label" for="">
+                <p class="text">Converter <b>para:</b></p>
+                <select class="main__select" name="" id="main__select">
+                    <option value="US$ Dólar Americano">US$ Dólar Americano</option>
+                    <option value="€ Euro">€ Euro</option>
+                    <option value="₿ Bitcoin">₿ Bitcoin</option>
+                </select>
+            </label>
+
+            <label class="main__label" for="">
+                <p class="text">Valor:</p>
+                <input class="main__input" id="main__input" type="text" placeholder="R$ 0,00">
+            </label>
+
+            <button class="main__btn" id="main__btn" type="button">Converter</button>
+
+            <section class="main__section">
+                <div>
+                    <figure>
+                        <img src="./img/brasil.png" alt="Bandeira do Brasil.">
+                        <figcaption>
+                            <p class="text text--margin">Real</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text-numbers" id="text-number-real">R$ 0,00</p>
+                </div>
+
+                <img class="section__img-arrow" src="./img/vector-arrow.png" alt="Seta apontando para baixo.">
+
+                <div>
+                    <figure>
+                        <img id="image-currency" src="./img/estados-unidos.png" alt="Bandeira dos Estados Unidos.">
+                        <figcaption>
+                            <p class="text text--margin" id="name-currency">Dólar Americano</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text-numbers" id="text-number-currency">US$ 0,00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>
